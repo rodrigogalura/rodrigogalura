@@ -94,7 +94,10 @@ const submit = handleSubmit((values) => {
                             placeholder="Full name"
                             v-bind="fullname"
                         />
-                        <span class="text-red-600 mt-2 ml-2" v-text="$filters.upperFirst(errors.fullname)"></span>
+                        <span
+                            class="text-red-600 mt-2 ml-2"
+                            v-text="$filters.upperFirst(errors.fullname)"
+                        ></span>
                     </div>
                     <div>
                         <input
@@ -104,7 +107,10 @@ const submit = handleSubmit((values) => {
                             placeholder="Email address"
                             v-bind="email"
                         />
-                        <span class="text-red-600 mt-2 ml-2" v-text="$filters.upperFirst(errors.email)"></span>
+                        <span
+                            class="text-red-600 mt-2 ml-2"
+                            v-text="$filters.upperFirst(errors.email)"
+                        ></span>
                     </div>
                 </div>
                 <div>
@@ -113,7 +119,10 @@ const submit = handleSubmit((values) => {
                         placeholder="Your Message"
                         v-bind="message"
                     ></textarea>
-                    <span class="text-red-600 mt-2 ml-2" v-text="$filters.upperFirst(errors.message)"></span>
+                    <span
+                        class="text-red-600 mt-2 ml-2"
+                        v-text="$filters.upperFirst(errors.message)"
+                    ></span>
                 </div>
                 <button class="form-btn mt-8" type="submit">
                     <ion-icon name="paper-plane"></ion-icon>
