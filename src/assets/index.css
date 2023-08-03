@@ -1,0 +1,8 @@
+@import 'vendor/html5boilerplate/normalize';
+@import 'vendor/html5boilerplate/main';
+
+@import 'css/style';
+
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;

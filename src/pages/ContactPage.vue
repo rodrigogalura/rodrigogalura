@@ -1,7 +1,7 @@
 <script setup>
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
-import UseEmail from '@/vendor/UseEmail'
+import UseEmail from '@/assets/vendor/herotofu/UseEmail'
 import { set, get } from '@/assets/localStorageWithExpiry'
 
 const validationSchema = yup.object({

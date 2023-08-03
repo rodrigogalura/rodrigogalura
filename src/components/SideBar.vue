@@ -1,5 +1,5 @@
 <script setup>
-import me from './../assets/img/me.jpg'
+import me from '@/assets/img/me.jpg'
 
 import { ref } from 'vue'
 const sideBarActive = ref(false)

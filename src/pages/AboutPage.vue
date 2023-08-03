@@ -1,16 +1,16 @@
 <script setup>
-import web from './../assets/img/web.svg'
-import mobileWeb from './../assets/img/mobile-web.svg'
-import android from './../assets/img/android.svg'
-import ux from './../assets/img/ux.svg'
+import web from '@/assets/img/web.svg'
+import mobileWeb from '@/assets/img/mobile-web.svg'
+import android from '@/assets/img/android.svg'
+import ux from '@/assets/img/ux.svg'
 
-import laravel from './../assets/img/laravel.svg'
-import vue from './../assets/img/vue.svg'
-import html5 from './../assets/img/html5.svg'
-import css3 from './../assets/img/css3.svg'
-import js from './../assets/img/js.svg'
+import laravel from '@/assets/img/laravel.svg'
+import vue from '@/assets/img/vue.svg'
+import html5 from '@/assets/img/html5.svg'
+import css3 from '@/assets/img/css3.svg'
+import js from '@/assets/img/js.svg'
 
-// import php from './../assets/img/php.svg'
+// import php from '@/assets/img/php.svg'
 
 // import 'vue3-carousel/dist/carousel.css'
 // import { Carousel, Pagination, Slide } from 'vue3-carousel'
