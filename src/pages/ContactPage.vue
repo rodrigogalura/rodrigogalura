@@ -1,7 +1,8 @@
 <script setup>
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
-import UseEmail from './../vendor/UseEmail'
+import UseEmail from '@/vendor/UseEmail'
+import { set, get } from '@/assets/localStorageWithExpiry'
 
 const validationSchema = yup.object({
     fullname: yup.string().required(),
@@ -21,7 +22,11 @@ const { loading, submitted, error, sendEmail } = UseEmail(
     'https://public.herotofu.com/v1/e7ec6f90-310a-11ee-8bd0-fd82facb0a25'
 )
 
+const userSentEmail = get('user-sent-email')
+
 const submit = handleSubmit((values) => {
+    set('user-sent-email', true, 5 * 60)
+
     sendEmail({
         fullname: values.fullname,
         email: values.email,
@@ -51,7 +56,10 @@ const submit = handleSubmit((values) => {
         <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <div v-if="submitted" class="rounded-lg shadow-lg p-3 bg-black mb-5 text-green-500">
+            <div
+                v-if="submitted || userSentEmail"
+                class="rounded-lg shadow-lg p-3 bg-black mb-5 text-green-500"
+            >
                 <p class="inline-block ml-2">
                     <ion-icon
                         name="information-circle"
@@ -85,7 +93,12 @@ const submit = handleSubmit((values) => {
                 </p>
             </div>
 
-            <form action="#" class="form" @submit.prevent="submit" :hidden="submitted">
+            <form
+                action="#"
+                class="form"
+                @submit.prevent="submit"
+                :hidden="submitted || userSentEmail"
+            >
                 <div class="input-wrapper">
                     <div>
                         <input
