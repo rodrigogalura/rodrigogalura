@@ -1,0 +1,12 @@
+{
+	"short_name": "rodrigogalura",
+	"name": "rodrigogalura.github.io",
+	"icons": [{
+		"src": "icon.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	}],
+	"start_url": "/",
+	"background_color": "#fafafa",
+	"theme_color": "#1e1e1f"
+}
