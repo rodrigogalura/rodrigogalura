@@ -1,9 +1,10 @@
 <template>
     <article class="blog">
-        <!-- <header>
-			<h2 class="h2 article-title">Blog</h2>
-		</header>
-		<section class="blog-posts">
+        <header>
+            <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <p class="text-white">This page is under development.</p>
+        <!-- <section class="blog-posts">
 			<ul class="blog-posts-list">
 				<li class="blog-post-item">
 					<a href="#">

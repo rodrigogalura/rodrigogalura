@@ -1,9 +1,10 @@
 <template>
     <article class="portfolio">
-        <!-- <header>
-	        <h2 class="h2 article-title">Portfolio</h2>
-	    </header>
-	    <section class="projects">
+        <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <p class="text-white">This page is under development.</p>
+        <!-- <section class="projects">
 	        <ul class="filter-list">
 	            <li class="filter-item">
 	                <button class="active" data-filter-btn>All</button>
