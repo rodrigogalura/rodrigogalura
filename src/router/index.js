@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
     {
-        path: '/about-me',
+        path: '/',
         name: 'about-me',
         component: () => import('@/pages/AboutMe.vue'),
         meta: {
