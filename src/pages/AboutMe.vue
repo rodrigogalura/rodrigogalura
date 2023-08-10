@@ -102,7 +102,7 @@ import js from '@/assets/img/js.svg'
             </ul>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials mb-0">
             <h3 class="h3 testimonials-title mb-10">Tech that I usually used</h3>
 
             <ul>
