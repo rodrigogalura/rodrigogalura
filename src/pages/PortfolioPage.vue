@@ -1,10 +1,17 @@
+<script setup>
+	import { ref } from 'vue';
+	import PortfolioModal from '@/components/PortfolioModal.vue';
+
+	const modalActive = ref(false);
+</script>
+
 <template>
     <article class="portfolio">
         <header>
             <h2 class="h2 article-title">Portfolio</h2>
         </header>
-        <p class="text-white">This page is under development.</p>
-        <!-- <section class="projects">
+        <!-- <p class="text-white">This page is under development.</p> -->
+        <section class="projects">
 	        <ul class="filter-list">
 	            <li class="filter-item">
 	                <button class="active" data-filter-btn>All</button>
@@ -19,7 +26,7 @@
 	                <button data-filter-btn>Web development</button>
 	            </li>
 	        </ul>
-	        <div class="filter-select-box">
+	        <!-- <div class="filter-select-box">
 	            <button class="filter-select" data-select>
 	                <div class="select-value" data-selecct-value>Select category</div>
 	                <div class="select-icon">
@@ -40,117 +47,23 @@
 	                    <button data-select-item>Web development</button>
 	                </li>
 	            </ul>
-	        </div>
+	        </div> -->
 	        <ul class="project-list">
-	            <li class="project-item  active" data-filter-item data-category="web development">
-	                <a href="#">
+	            <li class="project-item active" data-filter-item data-category="year-2022">
+	                <a href="#" @click.prevent="modalActive = true">
 	                    <figure class="project-img">
 	                        <div class="project-item-icon-box">
 	                            <ion-icon name="eye-outline"></ion-icon>
 	                        </div>
-	                        <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+	                        <img src="./../assets/img/portfolio/lexus/preview.png" alt="finance" loading="lazy">
 	                    </figure>
 	                    <h3 class="project-title">Finance</h3>
 	                    <p class="project-category">Web development</p>
 	                </a>
 	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web development">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Orizon</h3>
-	                    <p class="project-category">Web development</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web design">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Fundo</h3>
-	                    <p class="project-category">Web design</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="applications">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Brawlhalla</h3>
-	                    <p class="project-category">Applications</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web design">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">DSM.</h3>
-	                    <p class="project-category">Web design</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web design">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">MetaSpark</h3>
-	                    <p class="project-category">Web design</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web development">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Summary</h3>
-	                    <p class="project-category">Web development</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="applications">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Task Manager</h3>
-	                    <p class="project-category">Applications</p>
-	                </a>
-	            </li>
-	            <li class="project-item  active" data-filter-item data-category="web development">
-	                <a href="#">
-	                    <figure class="project-img">
-	                        <div class="project-item-icon-box">
-	                            <ion-icon name="eye-outline"></ion-icon>
-	                        </div>
-	                        <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-	                    </figure>
-	                    <h3 class="project-title">Arrival</h3>
-	                    <p class="project-category">Web development</p>
-	                </a>
-	            </li>
 	        </ul>
-	    </section> -->
+	    </section>
     </article>
+
+    <PortfolioModal @close-modal="modalActive = false" :active="modalActive" />
 </template>

@@ -6,3 +6,43 @@
 /*@tailwind base;*/
 @tailwind components;
 @tailwind utilities;
+
+.modal-container {
+	display: block;
+}
+
+.portfolio-modal {
+	background: var(--eerie-black-2);
+	position: relative;
+	padding: 15px;
+	margin: 15px 12px;
+	border: 1px solid var(--jet);
+	border-radius: 14px;
+	box-shadow: var(--shadow-5);
+	transform: scale(1.2);
+	opacity: 0;
+	transition: var(--transition-1);
+	z-index: 2;
+}
+
+.modal-container.active .portfolio-modal {
+	transform: scale(1);
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.portfolio-modal {
+		gap: 35px;
+	}
+}
+
+@media (min-width: 580px) {
+	.portfolio-modal {
+		display: flex;
+		justify-content: flex-start;
+		align-items: stretch;
+		gap: 25px;
+		padding: 30px;
+		border-radius: 20px;
+	}
+}
