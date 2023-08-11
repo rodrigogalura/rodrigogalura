@@ -70,7 +70,7 @@ const openModal = (title, category, screenshots) => {
                             <div class="project-item-icon-box">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </div>
-                            <img :src="p.preview" alt="finance" loading="lazy" />
+                            <img :src="p.preview.src" :alt="p.preview.alt" loading="lazy" />
                         </figure>
                         <h3 class="project-title" v-text="p.name"></h3>
                         <p class="project-category" v-text="p.category"></p>
