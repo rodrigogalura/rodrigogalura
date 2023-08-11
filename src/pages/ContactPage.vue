@@ -2,7 +2,7 @@
 import { useForm } from 'vee-validate'
 import * as yup from 'yup'
 import UseEmail from '@/assets/vendor/herotofu/UseEmail'
-import { set, get } from '@/assets/localStorageWithExpiry'
+import { set, get } from '@/assets/js/localStorageWithExpiry'
 
 const validationSchema = yup.object({
     fullname: yup.string().required(),

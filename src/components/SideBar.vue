@@ -6,7 +6,7 @@ const sideBarActive = ref(false)
 </script>
 
 <template>
-    <aside class="sidebar" :class="{active: sideBarActive}">
+    <aside class="sidebar" :class="{ active: sideBarActive }">
         <div class="sidebar-info">
             <figure class="avatar-box">
                 <img :src="me" alt="Rodrigo Galura" width="80" />
