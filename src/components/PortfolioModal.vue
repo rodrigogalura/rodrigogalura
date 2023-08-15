@@ -11,14 +11,23 @@ const emit = defineEmits(['closeModal'])
                 <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="modal-content">
+            <div class="modal-content w-full">
                 <h4 class="h3 modal-title" v-text="title"></h4>
                 <p class="mb-5" v-text="category"></p>
                 <div class="grid lg:grid-cols-3 gap-5">
-                    <div class="relative" v-for="ss in screenshots" :key="ss.alt">
+                	<div v-for="ss in screenshots" :key="ss.alt" class="overflow-hidden">
+                		<img
+                		    :src="ss.src"
+                		    class="rounded-lg w-full h-full bg-yellow-500 p-1 object-cover"
+                		    :alt="ss.alt"
+                		    loading="lazy"
+                		    @load="ss.isLoaded = true"
+                		/>
+                	</div>
+                    <!-- <div class="relative mb-40" v-for="ss in screenshots" :key="ss.alt" style="height: 200px;">
                         <img
                             :src="ss.src"
-                            class="rounded-lg w-full h-full bg-yellow-500 p-1"
+                            class="rounded-lg w-full bg-yellow-500 p-1"
                             :alt="ss.alt"
                             loading="lazy"
                             @load="ss.isLoaded = true"
@@ -30,7 +39,7 @@ const emit = defineEmits(['closeModal'])
                         >
                             Loading...
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

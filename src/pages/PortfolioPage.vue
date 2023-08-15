@@ -3,7 +3,10 @@ import { reactive } from 'vue'
 import PortfolioModal from '@/components/PortfolioModal.vue'
 import { lexus } from '@/assets/js/portfolio-data'
 
-const portfolioList = [lexus]
+const lexusWeb = { name: lexus.name, ...lexus.web };
+// const lexusMobile = { name: lexus.name, ...lexus.mobile };
+
+const portfolioList = [lexusWeb]
 
 const selectedItem = reactive({
     modalActive: false,
@@ -27,20 +30,26 @@ const openModal = (title, category, screenshots) => {
         </header>
         <!-- <p class="text-white">This page is under development.</p> -->
         <section class="projects">
-            <ul class="filter-list">
+            <!-- <ul class="filter-list">
                 <li class="filter-item">
                     <button class="active" data-filter-btn>All</button>
                 </li>
                 <li class="filter-item">
-                    <button data-filter-btn>Web design</button>
+                    <button data-filter-btn>Web</button>
                 </li>
                 <li class="filter-item">
-                    <button data-filter-btn>Applications</button>
+                    <button data-filter-btn>Mobile</button>
                 </li>
                 <li class="filter-item">
-                    <button data-filter-btn>Web development</button>
+                    <button data-filter-btn>2016</button>
                 </li>
-            </ul>
+                <li class="filter-item">
+                    <button data-filter-btn>See It in Action</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn>Other</button>
+                </li>
+            </ul> -->
             <!-- <div class="filter-select-box">
 				<button class="filter-select" data-select>
 					<div class="select-value" data-selecct-value>Select category</div>
@@ -65,7 +74,7 @@ const openModal = (title, category, screenshots) => {
 			</div> -->
             <ul class="project-list">
                 <li class="project-item active" v-for="(p, i) in portfolioList" :key="i">
-                    <a href="#" @click.prevent="openModal(p.name, p.category, lexus.screenshots)">
+                    <a href="#" @click.prevent="openModal(p.name, p.category, p.screenshots)">
                         <figure class="project-img">
                             <div class="project-item-icon-box">
                                 <ion-icon name="eye-outline"></ion-icon>
