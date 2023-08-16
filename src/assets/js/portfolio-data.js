@@ -1,22 +1,16 @@
 const lexus = {
     name: 'Lexus Courseware',
-    web: {
-	    category: 'Web',
-	    preview: { src: '/img/portfolio/lexus/home-4x3.png', alt: 'Lexus Preview' },
-	    screenshots: [
-	        { src: '/img/portfolio/lexus/grade11-4x3.png', alt: 'Grade 11' },
-	        // { src: '/img/portfolio/lexus/grade12-4x3.png', alt: 'Grade 12' },
-	        { src: '/img/portfolio/lexus/tech-voc-4x3.png', alt: 'Technology Vocational' },
-	        { src: '/img/portfolio/lexus/downloads-4x3.png', alt: 'Downloads' },
-	        { src: '/img/portfolio/lexus/about-us-4x3.png', alt: 'About Us' },
-	        { src: '/img/portfolio/lexus/contact-us-4x3.png', alt: 'Contact Us' }
-	    ]
-    },
-    mobile: {
-    	category: 'Mobile',
-    	preview: { src: '/img/portfolio/lexus/mobile/preview.png', alt: 'Lexus Preview' },
-    	screenshots: []
-    }
+    preview: { src: '/img/portfolio/lexus/preview.png', alt: 'Preview' },
+    items: [
+    	{ src: '/img/portfolio/lexus/desktop/home-4x3.png', alt: 'Home', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/grade11-4x3.png', alt: 'Grade 11', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/grade12-4x3.png', alt: 'Grade 12', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/tech-voc-4x3.png', alt: 'Technology Vocational', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/downloads-4x3.png', alt: 'Downloads', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/about-us-4x3.png', alt: 'About Us', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/desktop/contact-us-4x3.png', alt: 'Contact Us', category: 'desktop' },
+    	{ src: '/img/portfolio/lexus/mobile/home.png', alt: 'Contact Us', category: 'mobile' },
+    ]
 };
 
 export { lexus }

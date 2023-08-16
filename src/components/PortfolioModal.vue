@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['modalActive', 'title', 'category', 'screenshots'])
+defineProps(['modalActive', 'title', 'categories', 'items'])
 const emit = defineEmits(['closeModal'])
 </script>
 
@@ -13,33 +13,33 @@ const emit = defineEmits(['closeModal'])
 
             <div class="modal-content w-full">
                 <h4 class="h3 modal-title" v-text="title"></h4>
-                <p class="mb-5" v-text="category"></p>
+                <hr>
+                <!-- <p class="mb-5" v-text="category"></p> -->
+
+                <ul class="filter-list">
+                    <li class="filter-item" v-for="(category, i) in categories" :key="i">
+                        <button :class="{active: i == 0}" v-text="$filters.upperFirst(category)"></button>
+                    </li>
+                </ul>
+
                 <div class="grid lg:grid-cols-3 gap-5">
-                	<div v-for="ss in screenshots" :key="ss.alt" class="overflow-hidden">
+                	<div v-for="(item, i) in items" :key="i" class="overflow-hidden relative">
                 		<img
-                		    :src="ss.src"
+                		    :src="item.src"
                 		    class="rounded-lg w-full h-full bg-yellow-500 p-1 object-cover"
-                		    :alt="ss.alt"
+                		    :alt="item.alt"
                 		    loading="lazy"
-                		    @load="ss.isLoaded = true"
+                		    @load="item.isLoaded = true"
+                		    @error="item.isLoaded = true"
                 		/>
+                		<p
+                		    v-if="!item.isLoaded"
+                		    class="animate-pulse text-gray-500 text-1xl absolute left-1/2 top-1/2"
+                		    style="transform: translate(-50%, -50%)"
+                		>
+                		    Loading...
+                		</p>
                 	</div>
-                    <!-- <div class="relative mb-40" v-for="ss in screenshots" :key="ss.alt" style="height: 200px;">
-                        <img
-                            :src="ss.src"
-                            class="rounded-lg w-full bg-yellow-500 p-1"
-                            :alt="ss.alt"
-                            loading="lazy"
-                            @load="ss.isLoaded = true"
-                        />
-                        <p
-                            v-if="!ss.isLoaded"
-                            class="animate-pulse text-gray-500 text-1xl absolute left-1/2 top-1/2"
-                            style="transform: translate(-50%, -50%)"
-                        >
-                            Loading...
-                        </p>
-                    </div> -->
                 </div>
             </div>
         </section>

@@ -3,23 +3,27 @@ import { reactive } from 'vue'
 import PortfolioModal from '@/components/PortfolioModal.vue'
 import { lexus } from '@/assets/js/portfolio-data'
 
-const lexusWeb = { name: lexus.name, ...lexus.web };
+// const lexusWeb = { name: lexus.name, ...lexus.web };
 // const lexusMobile = { name: lexus.name, ...lexus.mobile };
 
-const portfolioList = [lexusWeb]
+const portfolioList = [lexus]
 
 const selectedItem = reactive({
     modalActive: false,
     title: '',
-    category: '',
-    screenshots: []
+    items: {},
+    // category: '',
+    // screenshots: []
 })
 
-const openModal = (title, category, screenshots) => {
+const openModal = (title, items) => {
     selectedItem.modalActive = true
     selectedItem.title = title
-    selectedItem.category = category
-    selectedItem.screenshots = screenshots
+    selectedItem.categories = [... new Set(items.map(i => i.category))]
+    selectedItem.items = items
+
+    // selectedItem.category = category
+    // selectedItem.screenshots = screenshots
 }
 </script>
 
@@ -38,7 +42,7 @@ const openModal = (title, category, screenshots) => {
                     <button data-filter-btn>Web</button>
                 </li>
                 <li class="filter-item">
-                    <button data-filter-btn>Mobile</button>
+                    <button data-filter-btn>Mobile Web</button>
                 </li>
                 <li class="filter-item">
                     <button data-filter-btn>2016</button>
@@ -74,7 +78,7 @@ const openModal = (title, category, screenshots) => {
 			</div> -->
             <ul class="project-list">
                 <li class="project-item active" v-for="(p, i) in portfolioList" :key="i">
-                    <a href="#" @click.prevent="openModal(p.name, p.category, p.screenshots)">
+                    <a href="#" @click.prevent="openModal(p.name, p.items)">
                         <figure class="project-img">
                             <div class="project-item-icon-box">
                                 <ion-icon name="eye-outline"></ion-icon>
@@ -82,7 +86,7 @@ const openModal = (title, category, screenshots) => {
                             <img :src="p.preview.src" :alt="p.preview.alt" loading="lazy" />
                         </figure>
                         <h3 class="project-title" v-text="p.name"></h3>
-                        <p class="project-category" v-text="p.category"></p>
+                        <!-- <p class="project-category" v-text="p.category"></p> -->
                     </a>
                 </li>
             </ul>
