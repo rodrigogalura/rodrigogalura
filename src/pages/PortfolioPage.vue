@@ -3,9 +3,6 @@ import { reactive } from 'vue'
 import PortfolioModal from '@/components/PortfolioModal.vue'
 import { lexus } from '@/assets/js/portfolio-data'
 
-// const lexusWeb = { name: lexus.name, ...lexus.web };
-// const lexusMobile = { name: lexus.name, ...lexus.mobile };
-
 const portfolioList = [lexus]
 
 const selectedItem = reactive({})
@@ -73,7 +70,7 @@ const openModal = (title, items) => {
             <ul class="project-list">
                 <li class="project-item active" v-for="(p, i) in portfolioList" :key="i">
                     <a href="#" @click.prevent="openModal(p.name, p.items)">
-                        <figure class="project-img">
+                        <figure class="project-img h-full">
                             <div class="project-item-icon-box">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </div>
