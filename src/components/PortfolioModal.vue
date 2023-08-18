@@ -1,14 +1,28 @@
 <script setup>
 import { ref, onUpdated } from 'vue'
+const props = defineProps(['modalActive', 'title', 'categories', 'items'])
+const emit = defineEmits(['closeModal'])
 
 const activeCategory = ref(null)
-const props = defineProps(['modalActive', 'title', 'categories', 'items'])
+const isDropdownCategoryActive = ref(false)
+
+const openDropdown = async (open = true) => {
+    await new Promise((resolve) => {
+        if (open) resolve()
+        setTimeout(resolve, 100)
+    })
+
+    isDropdownCategoryActive.value = open
+}
+
+const selectCategory = (category) => {
+    activeCategory.value = category
+    openDropdown(false)
+}
 
 onUpdated(() => {
     activeCategory.value = props.categories[0]
 })
-
-const emit = defineEmits(['closeModal'])
 </script>
 
 <template>
@@ -28,12 +42,41 @@ const emit = defineEmits(['closeModal'])
                     <ul class="filter-list">
                         <li class="filter-item" v-for="(category, i) in categories" :key="i">
                             <button
-                                @click="activeCategory = category"
+                                @click="selectCategory(category)"
                                 :class="{ active: category == activeCategory }"
                                 v-text="$filters.upperFirst(category)"
                             ></button>
                         </li>
                     </ul>
+
+                    <div class="filter-select-box">
+                        <button
+                            class="filter-select"
+                            :class="{ active: isDropdownCategoryActive }"
+                            @click="openDropdown(true)"
+                            @blur="openDropdown(false)"
+                        >
+                            <div
+                                class="select-value"
+                                data-selecct-value
+                                v-text="$filters.upperFirst(activeCategory)"
+                            ></div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+                        <ul class="select-list">
+                            <li class="select-item" v-for="(category, i) in categories" :key="i">
+                                <button
+                                    @click="selectCategory(category)"
+                                    :class="{
+                                        'bg-yellow-500 text-black': category === activeCategory
+                                    }"
+                                    v-text="$filters.upperFirst(category)"
+                                ></button>
+                            </li>
+                        </ul>
+                    </div>
 
                     <div class="grid lg:grid-cols-3 gap-5">
                         <template v-for="(item, i) in items" :key="i">

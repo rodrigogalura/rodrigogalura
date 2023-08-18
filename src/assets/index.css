@@ -46,3 +46,7 @@
         border-radius: 20px;
     }
 }
+
+.filter-select-box button.active {
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
+}

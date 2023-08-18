@@ -33,6 +33,21 @@ const lexus = {
             alt: 'Contact Us',
             category: 'desktop'
         },
+        { src: '/img/portfolio/lexus/tablet/home.png', alt: 'Home', category: 'tablet' },
+        { src: '/img/portfolio/lexus/tablet/grade11.png', alt: 'Grade 11', category: 'tablet' },
+        { src: '/img/portfolio/lexus/tablet/grade12.png', alt: 'Grade 12', category: 'tablet' },
+        {
+            src: '/img/portfolio/lexus/tablet/tech-voc.png',
+            alt: 'Technology Vocational',
+            category: 'tablet'
+        },
+        { src: '/img/portfolio/lexus/tablet/downloads.png', alt: 'Downloads', category: 'tablet' },
+        { src: '/img/portfolio/lexus/tablet/about-us.png', alt: 'About Us', category: 'tablet' },
+        {
+            src: '/img/portfolio/lexus/tablet/contact-us.png',
+            alt: 'Contact Us',
+            category: 'tablet'
+        },
         { src: '/img/portfolio/lexus/mobile/home.png', alt: 'Home', category: 'mobile' },
         { src: '/img/portfolio/lexus/mobile/grade11.png', alt: 'Grade 11', category: 'mobile' },
         { src: '/img/portfolio/lexus/mobile/grade12.png', alt: 'Grade 12', category: 'mobile' },
@@ -47,18 +62,7 @@ const lexus = {
             src: '/img/portfolio/lexus/mobile/contact-us.png',
             alt: 'Contact Us',
             category: 'mobile'
-        },
-        { src: '/img/portfolio/lexus/tablet/home.png', alt: 'Home', category: 'tablet' },
-        { src: '/img/portfolio/lexus/tablet/grade11.png', alt: 'Grade 11', category: 'tablet' },
-        { src: '/img/portfolio/lexus/tablet/grade12.png', alt: 'Grade 12', category: 'tablet' },
-        {
-            src: '/img/portfolio/lexus/tablet/tech-voc.png',
-            alt: 'Technology Vocational',
-            category: 'tablet'
-        },
-        { src: '/img/portfolio/lexus/tablet/downloads.png', alt: 'Downloads', category: 'tablet' },
-        { src: '/img/portfolio/lexus/tablet/about-us.png', alt: 'About Us', category: 'tablet' },
-        { src: '/img/portfolio/lexus/tablet/contact-us.png', alt: 'Contact Us', category: 'tablet' }
+        }
     ]
 }
 
