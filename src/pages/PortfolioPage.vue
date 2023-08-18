@@ -8,18 +8,12 @@ import { lexus } from '@/assets/js/portfolio-data'
 
 const portfolioList = [lexus]
 
-const selectedItem = reactive({
-    modalActive: false,
-    title: '',
-    items: {},
-    // category: '',
-    // screenshots: []
-})
+const selectedItem = reactive({})
 
 const openModal = (title, items) => {
     selectedItem.modalActive = true
     selectedItem.title = title
-    selectedItem.categories = [... new Set(items.map(i => i.category))]
+    selectedItem.categories = [...new Set(items.map((i) => i.category))]
     selectedItem.items = items
 
     // selectedItem.category = category
