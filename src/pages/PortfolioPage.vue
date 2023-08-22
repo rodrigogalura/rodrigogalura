@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from 'vue'
 import PortfolioModal from '@/components/PortfolioModal.vue'
-import { lexus } from '@/assets/js/portfolio-data'
+import { lexus, letsUpReviewer } from '@/assets/js/portfolio-data'
 
-const portfolioList = [lexus]
+const portfolioList = [lexus, letsUpReviewer]
 
 const selectedItem = reactive({})
 

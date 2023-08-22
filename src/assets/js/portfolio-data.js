@@ -66,4 +66,41 @@ const lexus = {
     ]
 }
 
-export { lexus }
+const letsUpReviewer = {
+    name: "Let's Up Reviewer",
+    preview: { src: '/img/portfolio/lets-up-reviewer/preview.png', alt: 'Preview' },
+    items: [
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/home-4x3.png',
+            alt: 'Home',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/about-us-4x3.png',
+            alt: 'About Us',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/faqs-4x3.png',
+            alt: 'FAQs',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/login-4x3.png',
+            alt: 'Login',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student-registration-4x3.png',
+            alt: 'Student Registration',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher-registration-4x3.png',
+            alt: 'Teacher Registration',
+            category: 'desktop'
+        }
+    ]
+}
+
+export { lexus, letsUpReviewer }

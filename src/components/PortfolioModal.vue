@@ -86,7 +86,7 @@ onUpdated(() => {
                             >
                                 <img
                                     :src="item.src"
-                                    class="rounded-lg w-full h-full bg-yellow-500 p-1 object-cover"
+                                    class="rounded-lg w-full h-full border-solid border-yellow-500 p-1 object-cover"
                                     :alt="item.alt"
                                     loading="lazy"
                                     @load="item.isLoaded = true"
