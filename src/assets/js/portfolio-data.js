@@ -99,7 +99,42 @@ const letsUpReviewer = {
             src: '/img/portfolio/lets-up-reviewer/desktop/teacher-registration-4x3.png',
             alt: 'Teacher Registration',
             category: 'desktop'
-        }
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/account-4x3.png',
+            alt: 'Teacher Account',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/edit-account-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/edit-password-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/profed-list-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/assessment-and-evaluation-4x3.png',
+            alt: 'Teacher Assessment and Evaluation',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/questionnaires-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/teacher/result-totally-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
     ]
 }
 
