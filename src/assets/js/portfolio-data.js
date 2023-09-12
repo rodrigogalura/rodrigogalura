@@ -135,6 +135,36 @@ const letsUpReviewer = {
             alt: 'Profed List',
             category: 'desktop'
         },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/profed-list-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/assessment-and-evaluation-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/question-num1-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/exam-result-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/view-result-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/desktop/student/result-totally-4x3.png',
+            alt: 'Profed List',
+            category: 'desktop'
+        },
     ]
 }
 
