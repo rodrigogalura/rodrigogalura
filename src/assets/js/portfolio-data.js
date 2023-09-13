@@ -165,6 +165,96 @@ const letsUpReviewer = {
             alt: 'Profed List',
             category: 'desktop'
         },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/home.png',
+            alt: 'Home',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/about-us.png',
+            alt: 'About Us',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/faqs.png',
+            alt: 'FAQs',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/login.png',
+            alt: 'Login',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student-reg.png',
+            alt: 'Student Registration',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher-reg.png',
+            alt: 'Teacher Registration',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher/account.png',
+            alt: 'Teacher Account',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher/assess-eval.png',
+            alt: 'Teacher Assessment and Evaluation',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher/profed-list.png',
+            alt: 'Teacher Profeds',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher/questionnaires.png',
+            alt: 'Teacher Questionnaires',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/teacher/result-totally.png',
+            alt: 'Teacher Result Totally',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/account.png',
+            alt: 'Student Account',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/assess-eval.png',
+            alt: 'Student Assessment and Evaluation',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/profed-list.png',
+            alt: 'Student Profeds',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/question-num.png',
+            alt: 'Student Question Number',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/result.png',
+            alt: 'Student Result',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/result-totally.png',
+            alt: 'Student Result Totally',
+            category: 'tablet'
+        },
+        {
+            src: '/img/portfolio/lets-up-reviewer/tablet/student/view-result.png',
+            alt: 'Student View Result',
+            category: 'tablet'
+        },
     ]
 }
 
