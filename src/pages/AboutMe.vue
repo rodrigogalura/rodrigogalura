@@ -10,6 +10,7 @@ import mysql from '@/assets/img/mysql.svg'
 import ubuntu from '@/assets/img/ubuntu.svg'
 import git from '@/assets/img/git.svg'
 import vim from '@/assets/img/vim.svg'
+import pest from '@/assets/img/pest.svg'
 import docker from '@/assets/img/docker.svg'
 import composer from '@/assets/img/composer.svg'
 import phpmyadmin from '@/assets/img/phpmyadmin.svg'
@@ -40,6 +41,7 @@ import virtualbox from '@/assets/img/virtualbox.svg'
 import terminal from '@/assets/img/terminal.svg'
 import tilix from '@/assets/img/tilix.svg'
 import windows from '@/assets/img/windows.svg'
+import tablePlus from '@/assets/img/table-plus.png'
 
 const techs = [
     html5,
@@ -49,6 +51,7 @@ const techs = [
     ubuntu,
     git,
     vim,
+    pest,
     docker,
     composer,
     phpmyadmin,
@@ -58,18 +61,34 @@ const techs = [
     bruno,
     ghostty,
     finder,
-    css3, js,
+    css3,
+    js
 ]
 
 const prevTechs = [
-    java, python, cpp,
-    slim, lumen, phpunit,
-    angular, jquery, backbonejs, uikit, semanticui, tailwindcss,
-    postman, insomnia, virtualbox, terminal, tilix, windows
-];
+    java,
+    python,
+    cpp,
+    slim,
+    lumen,
+    phpunit,
+    angular,
+    jquery,
+    backbonejs,
+    uikit,
+    semanticui,
+    tailwindcss,
+    postman,
+    insomnia,
+    virtualbox,
+    terminal,
+    tilix,
+    windows,
+    tablePlus
+]
 
-const ROWS = 3;
-const prevTechsChunk = chunk(prevTechs, Math.ceil(prevTechs.length/ROWS))
+const ROWS = 3
+const prevTechsChunk = chunk(prevTechs, Math.ceil(prevTechs.length / ROWS))
 </script>
 
 <template>

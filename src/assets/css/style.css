@@ -258,7 +258,7 @@ article {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30px;
+    width: 100%;
     height: 3px;
     background: var(--text-gradient-yellow);
     border-radius: 3px;
@@ -1390,7 +1390,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .article-title::after {
-        width: 40px;
+        width: 100%;
         height: 5px;
     }
 

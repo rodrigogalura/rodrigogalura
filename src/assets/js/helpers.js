@@ -6,10 +6,10 @@ export function chunk(arr, size) {
     return chunked
 }
 
-export function rand(min=0, max=1) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+export function rand(min = 0, max = 1) {
+    const minCeiled = Math.ceil(min)
+    const maxFloored = Math.floor(max)
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled)
 }
 
 export function shuffle(arr) {
@@ -23,5 +23,5 @@ export function shuffle(arr) {
         arr[i] = temp
     }
 
-    return arr;
+    return arr
 }
