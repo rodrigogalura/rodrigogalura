@@ -341,6 +341,10 @@ main {
     border-radius: 20px;
 }
 
+.avatar-box img {
+    border-radius: 5px;
+}
+
 .info-content .name {
     color: var(--white-2);
     font-size: var(--fs-3);
@@ -509,14 +513,16 @@ main {
     margin-bottom: 15px;
 }
 
-.about-text {
+.about-text,
+.service-text {
     color: var(--light-gray);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
 
-.about-text p {
+.about-text p,
+.service-text p {
     margin-bottom: 15px;
 }
 
@@ -577,6 +583,10 @@ main {
     font-size: var(--fs-6);
     font-weight: var(--fw-3);
     line-height: 1.6;
+}
+
+.tech-slider {
+    margin-bottom: 15px;
 }
 
 /**

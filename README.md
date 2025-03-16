@@ -9,9 +9,9 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 *   🌍  I'm based in Philippines
 *   🖥️  See my portfolio at [My Portfolio](http://rodrigogalura.github.io)
 *   ✉️  You can contact me at [rodrigogalura3rd@gmail.com](mailto:rodrigogalura3rd@gmail.com)
-*   🚀  I'm currently working on [QuickStrike Manufacturing](http://about.qstrike.com/about.php)
+*   🚀  I'm currently working on [QStrike Innovations Phils., OPC](https://prolook.com)
 *   🧠  I'm learning all technologies related to web development.
-*   ⚡  I am Spider-Man... please don't laugh
+*   ⚡  Laravel fan
 
 ### Skills
 <p align="left">

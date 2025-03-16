@@ -2,6 +2,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
     {
+        path: '/',
+        redirect: '/about-me'
+    },
+    {
         path: '/about-me',
         name: 'about-me',
         component: () => import('@/pages/AboutMe.vue'),

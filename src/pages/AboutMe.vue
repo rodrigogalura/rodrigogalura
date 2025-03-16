@@ -1,21 +1,75 @@
 <script setup>
-import web from '@/assets/img/web.svg'
-import mobileWeb from '@/assets/img/mobile-web.svg'
-import android from '@/assets/img/android.svg'
-import ux from '@/assets/img/ux.svg'
+import { VueMarqueeSlider } from 'vue3-marquee-slider'
+import '@/../node_modules/vue3-marquee-slider/dist/style.css'
+import { shuffle, chunk, rand } from '@/assets/js/helpers.js'
 
-import laravel from '@/assets/img/laravel.svg'
-import vue from '@/assets/img/vue.svg'
 import html5 from '@/assets/img/html5.svg'
+import php from '@/assets/img/php.svg'
+import laravel from '@/assets/img/laravel.svg'
+import mysql from '@/assets/img/mysql.svg'
+import ubuntu from '@/assets/img/ubuntu.svg'
+import git from '@/assets/img/git.svg'
+import vim from '@/assets/img/vim.svg'
+import docker from '@/assets/img/docker.svg'
+import composer from '@/assets/img/composer.svg'
+import phpmyadmin from '@/assets/img/phpmyadmin.svg'
+import vue from '@/assets/img/vue.svg'
+import subl from '@/assets/img/subl.svg'
+import bootstrap from '@/assets/img/bootstrap.svg'
+import bruno from '@/assets/img/bruno.svg'
+import ghostty from '@/assets/img/ghostty.svg'
+import finder from '@/assets/img/finder.svg'
 import css3 from '@/assets/img/css3.svg'
 import js from '@/assets/img/js.svg'
 
-// import php from '@/assets/img/php.svg'
+import java from '@/assets/img/java.svg'
+import python from '@/assets/img/python.svg'
+import cpp from '@/assets/img/cpp.svg'
+import slim from '@/assets/img/slim.svg'
+import lumen from '@/assets/img/lumen.svg'
+import phpunit from '@/assets/img/phpunit.svg'
+import angular from '@/assets/img/angular.svg'
+import jquery from '@/assets/img/jquery.svg'
+import backbonejs from '@/assets/img/backbonejs.svg'
+import uikit from '@/assets/img/uikit.svg'
+import semanticui from '@/assets/img/semanticui.svg'
+import tailwindcss from '@/assets/img/tailwindcss.svg'
+import postman from '@/assets/img/postman.svg'
+import insomnia from '@/assets/img/insomnia.svg'
+import virtualbox from '@/assets/img/virtualbox.svg'
+import terminal from '@/assets/img/terminal.svg'
+import tilix from '@/assets/img/tilix.svg'
+import windows from '@/assets/img/windows.svg'
 
-// import 'vue3-carousel/dist/carousel.css'
-// import { Carousel, Pagination, Slide } from 'vue3-carousel'
+const techs = [
+    html5,
+    php,
+    mysql,
+    laravel,
+    ubuntu,
+    git,
+    vim,
+    docker,
+    composer,
+    phpmyadmin,
+    vue,
+    subl,
+    bootstrap,
+    bruno,
+    ghostty,
+    finder,
+    css3, js,
+]
 
-// const otherTech = { php }
+const prevTechs = [
+    java, python, cpp,
+    slim, lumen, phpunit,
+    angular, jquery, backbonejs, uikit, semanticui, tailwindcss,
+    postman, insomnia, virtualbox, terminal, tilix, windows
+];
+
+const ROWS = 3;
+const prevTechsChunk = chunk(prevTechs, Math.ceil(prevTechs.length/ROWS))
 </script>
 
 <template>
@@ -26,27 +80,54 @@ import js from '@/assets/img/js.svg'
 
         <section class="about-text">
             <p>
-                Allow me to introduce myself — I am a Senior Software Engineer, proudly contributing
-                my expertise to the cutting-edge team at Quickstrike Manufacturing in the
-                Philippines. My passion lies in the realm of web application development, where I
-                excel in crafting seamless experiences.
+                I am a Senior Software Engineer at QStrike Innovations Phils., OPC in the
+                Philippines, specializing in web application development. My primary role is to
+                design efficient APIs for our Front-End team, ensuring seamless integration and
+                collaboration. I also review their work to maintain high coding standards and
+                deliver quality results to our clients. <br />
             </p>
             <p>
-                In this exciting role, my primary responsibility is to provide a thoughtfully
-                designed API to my talented Front-End teammates, fostering collaborative innovation
-                and smooth interactions between our teams. Additionally, I take on the crucial task
-                of meticulously reviewing their work, ensuring that we consistently adhere to the
-                highest coding standards, delivering top-notch results to our valued clients.
+                Working alongside my colleagues, I contribute to shaping the digital landscape,
+                driving innovation in web application design and development. Being part of this
+                dynamic environment allows me to push the boundaries of what’s possible in software.
             </p>
+        </section>
+
+        <section class="service-text">
+            <h3>Technologies &amp; Tools</h3>
+
             <p>
-                Together with my colleagues, we embark on a journey to shape the digital landscape,
-                revolutionizing the way web applications are designed and developed. It's a
-                privilege to be part of such a dynamic and forward-thinking environment, constantly
-                pushing the boundaries of what's possible in the software realm.
+                Here are the technologies and tools I use in my development workflow, enabling me to
+                build efficient, scalable, and high-quality web applications.
             </p>
         </section>
 
         <section class="service">
+            <vue-marquee-slider
+                class="tech-slider"
+                id="current-tech-stack-slider"
+                :speed="1000 * rand(23, 30)"
+                :width="50"
+                :space="75"
+            >
+                <img v-for="(tech, i) in techs" :key="i" :src="tech" />
+            </vue-marquee-slider>
+
+            <vue-marquee-slider
+                class="tech-slider"
+                v-for="(techsRow, j) in shuffle(prevTechsChunk)"
+                :key="j"
+                :id="`prev-tech-stack-slider-${j}`"
+                :speed="1000 * rand(23, 30)"
+                :width="20"
+                :space="75"
+                :reverse="j % 2 == 0"
+            >
+                <img v-for="(tech, k) in shuffle(techsRow)" :key="k" :src="tech" />
+            </vue-marquee-slider>
+        </section>
+
+        <!-- <section class="service">
             <h3 class="h3 service-title">My Skills</h3>
             <ul class="service-list">
                 <li class="service-item">
@@ -170,7 +251,7 @@ import js from '@/assets/img/js.svg'
                     </div>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- <section>
     	<h3 class="h3 service-title">Other Tech That I Used</h3>
@@ -231,45 +312,3 @@ import js from '@/assets/img/js.svg'
     </section> -->
     </article>
 </template>
-
-<style>
-.carousel__slide {
-    padding: 5px;
-}
-
-.carousel__viewport {
-    perspective: 2000px;
-}
-
-.carousel__track {
-    transform-style: preserve-3d;
-}
-
-.carousel__slide--sliding {
-    transition: 0.5s;
-}
-
-.carousel__slide {
-    opacity: 0.9;
-    transform: rotateY(-20deg) scale(0.9);
-}
-
-.carousel__slide--active ~ .carousel__slide {
-    transform: rotateY(20deg) scale(0.9);
-}
-
-.carousel__slide--prev {
-    opacity: 1;
-    transform: rotateY(-10deg) scale(0.95);
-}
-
-.carousel__slide--next {
-    opacity: 1;
-    transform: rotateY(10deg) scale(0.95);
-}
-
-.carousel__slide--active {
-    opacity: 1;
-    transform: rotateY(0) scale(1.1);
-}
-</style>
