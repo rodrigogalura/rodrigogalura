@@ -12,7 +12,7 @@
                     >
                 </router-link>
             </li>
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
                 <router-link to="/resume" v-slot="{ href, navigate, isActive }" custom>
                     <a
                         :href="href"
@@ -33,15 +33,15 @@
                         >Portfolio</a
                     >
                 </router-link>
-            </li>
+            </li> -->
             <li class="navbar-item">
-                <router-link to="/blog" v-slot="{ href, navigate, isActive }" custom>
+                <router-link to="/showcase" v-slot="{ href, navigate, isActive }" custom>
                     <a
                         :href="href"
                         @click="navigate"
                         class="navbar-link"
                         :class="{ active: isActive }"
-                        >Blog</a
+                        >Showcase</a
                     >
                 </router-link>
             </li>

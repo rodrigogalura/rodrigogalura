@@ -13,28 +13,28 @@ const routes = [
             title: 'About Me'
         }
     },
+    // {
+    //     path: '/resume',
+    //     name: 'resume',
+    //     component: () => import('@/pages/ResumePage.vue'),
+    //     meta: {
+    //         title: 'Resume'
+    //     }
+    // },
+    // {
+    //     path: '/portfolio',
+    //     name: 'portfolio',
+    //     component: () => import('@/pages/PortfolioPage.vue'),
+    //     meta: {
+    //         title: 'Portfolio'
+    //     }
+    // },
     {
-        path: '/resume',
-        name: 'resume',
-        component: () => import('@/pages/ResumePage.vue'),
+        path: '/showcase',
+        name: 'showcase',
+        component: () => import('@/pages/ShowcasePage.vue'),
         meta: {
-            title: 'Resume'
-        }
-    },
-    {
-        path: '/portfolio',
-        name: 'portfolio',
-        component: () => import('@/pages/PortfolioPage.vue'),
-        meta: {
-            title: 'Portfolio'
-        }
-    },
-    {
-        path: '/blog',
-        name: 'blog',
-        component: () => import('@/pages/BlogPage.vue'),
-        meta: {
-            title: 'Blog'
+            title: 'Showcase'
         }
     },
     {
