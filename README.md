@@ -7,11 +7,11 @@ Software Engineer
 Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 
 *   🌍  I'm based in Philippines
-*   🖥️  See my portfolio at [My Portfolio](http://rodrigogalura.github.io)
+*   🖥️  See my portfolio at [My Portfolio](http://rodrigogalura.github.io/#/portfolio)
 *   ✉️  You can contact me at [rodrigogalura3rd@gmail.com](mailto:rodrigogalura3rd@gmail.com)
 *   🚀  I'm currently working on [QStrike Innovations Phils., OPC](https://prolook.com)
 *   🧠  I'm learning all technologies related to web development.
-*   ⚡  Laravel fan
+*   ⚡  [Laravel](http://laravel.com) fan
 
 ### Skills
 <p align="left">
