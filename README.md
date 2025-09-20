@@ -14,7 +14,7 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 *   🤝 I'm open to collaborating on Web Development
 *   ⚡ Laravel Fan
 
-<a href="https://www.github.com/rodrigogalura" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/rodrigogalura?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
+<a href="https://github.com/rodrigogalura?tab=followers" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/rodrigogalura?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
 
 ---
     
