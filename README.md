@@ -121,11 +121,11 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 
 ---
 
-### Support Me
+## 💖 Support My Work
 
 If any of my work has been helpful or saved you valuable time, feel free to show your support by buying me a coffee. Your support keeps the projects going!
 
-<a href="https://www.ko-fi.com/rodrigogalura"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="150"/></a>
+<a href="https://www.ko-fi.com/rodrigogalura" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="150"/></a>
 
 <!-- <ul style="list-style-type: none; margin: 0;">
 <li style="display: inline-block; margin-right: 0.25rem;">
