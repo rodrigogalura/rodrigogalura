@@ -57,6 +57,8 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 <a href="https://gnunn1.github.io/tilix-web" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/tilix.svg" width="18" height="18" alt="tilix" /></a>
 <a href="https://www.microsoft.com/en-ph/windows?r=1" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/windows.svg" width="18" height="18" alt="windows" /></a>
 <a href="https://tableplus.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/table-plus.png" width="18" height="18" alt="tablePlus" /></a>
+<a href="https://mochajs.org/next/getting-started" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/mocha.svg" width="18" height="18" alt="mocha" /></a>
+<a href="https://www.chaijs.com/guide" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/chai.svg" width="18" height="18" alt="chai" /></a>
 </p>
 
 ---
