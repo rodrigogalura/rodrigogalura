@@ -18,7 +18,7 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 
 ---
     
-### Skills
+### Skillset
 
 <p align="left">
 <a href="https://laravel.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/laravel.svg" width="36" height="36" alt="Laravel" /></a>
@@ -26,19 +26,23 @@ Architecting Solutions, Innovating Code, and Transforming Ideas into Reality
 <a href="https://www.mysql.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/mysql.svg" width="36" height="36" alt="Mysql" /></a>
 <a href="https://pestphp.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/pest.svg" width="36" height="36" alt="Pest" /></a>
 <a href="https://getcomposer.org" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/composer.svg" width="36" height="36" alt="Composer" /></a>
-<a href="https://www.phpmyadmin.net" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/phpmyadmin.svg" width="36" height="36" alt="Phpmyadmin" /></a>
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/html5.svg" width="36" height="36" alt="HTML5" /></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/css3.svg" width="36" height="36" alt="CSS3" /></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/js.svg" width="36" height="36" alt="JavaScript" /></a>
 <a href="https://vuejs.org" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/vue.svg" width="36" height="36" alt="Vue" /></a>
+<!-- <a href="https://vitest.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/vitest.svg" width="36" height="36" alt="Vitest" /></a>
+<a href="https://pnpm.io" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/pnpm.svg" width="36" height="36" alt="PNPM" /></a> -->
+<a href="https://vitest.dev" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="./img/vitest.svg" width="36" height="36" alt="Vitest" /></a>
+<a href="https://pnpm.io" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="./img/pnpm.svg" width="36" height="36" alt="PNPM" /></a>
 <a href="https://git-scm.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/git.svg" width="36" height="36" alt="Git" /></a>
 <a href="https://www.docker.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/docker.svg" width="36" height="36" alt="Docker" /></a>
-<a href="https://www.sublimetext.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/subl.svg" width="36" height="36" alt="Sublime Text" /></a>
 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/bootstrap.svg" width="36" height="36" alt="Bootstrap" /></a>
-<a href="https://www.usebruno.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/bruno.svg" width="36" height="36" alt="Bruno" /></a>
-<a href="https://ubuntu.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/ubuntu.svg" width="36" height="36" alt="Ubuntu" /></a>
 <a href="https://www.gnu.org/software/bash" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/gnubash.svg" width="36" height="36" alt="GNU Bash" /></a>
+<a href="https://www.sublimetext.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/subl.svg" width="36" height="36" alt="Sublime Text" /></a>
+<a href="https://www.usebruno.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/bruno.svg" width="36" height="36" alt="Bruno" /></a>
+<a href="https://www.phpmyadmin.net" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/phpmyadmin.svg" width="36" height="36" alt="Phpmyadmin" /></a>
 
+<a href="https://ubuntu.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/ubuntu.svg" width="18" height="18" alt="Ubuntu" /></a>
 <a href="https://www.java.com/en" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/java.svg" width="18" height="18" alt="java" /></a>
 <a href="https://www.python.org" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/python.svg" width="18" height="18" alt="python" /></a>
 <a href="https://cplusplus.com" target="_blank" rel="noreferrer" style="margin-right: 5px"><img src="https://raw.githubusercontent.com/rodrigogalura/rodrigogalura/refs/heads/main/img/cpp.svg" width="18" height="18" alt="cpp" /></a>
